@@ -20,3 +20,6 @@ workflows:
   build-deploy:
     jobs:
       - build-test
+      filters:
+        branches:
+          only: develop
